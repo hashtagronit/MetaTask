@@ -17,8 +17,11 @@ const submitHandler = (e)=> {
 }
 
   return (
-    <div className='flex items-center h-screen w-screen justify-center'>
-      <div className='border-2 border-emerald-600 p-20 rounded-xl'>
+    <div className='flex flex-col items-center h-screen w-screen justify-center'>
+      <div className=' mb-10'>
+        <h1 className='text-4xl font-bold text-emerald-600'>MetaTask</h1>
+      </div>
+      <div className='border-2 border-emerald-600 p-20 rounded-xl mb-10'>
         <form 
         onSubmit={(e)=>{submitHandler(e)}}
         className='flex flex-col items-center justify-center'>
@@ -48,6 +51,10 @@ const submitHandler = (e)=> {
             className='mt-5 bg-emerald-600 rounded-full text-white text-xl outline-none py-3 px-28 placeholder:text-white'
             >Log In</button>
         </form>
+      </div>
+      <div> 
+        <p className=' text-gray-500 text-sm'>Admin Credentials : Ronit@gmail.com, 1812</p>
+        <p className=' text-gray-500 text-sm'>Employee Credentials : pranjana@gmail.com, 123</p>
       </div>
     </div>
   )
